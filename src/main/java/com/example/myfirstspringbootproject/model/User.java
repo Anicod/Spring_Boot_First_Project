@@ -1,9 +1,13 @@
 package com.example.myfirstspringbootproject.model;
 
 public class User {
-    String firstName;
-    String lastName;
+    public String firstName;
+    public String lastName;
 
+    public User(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
     public String getFirstName() {
         return firstName;
     }
@@ -17,11 +21,6 @@ public class User {
     }
 
     public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public User(String firstName, String lastName) {
-        this.firstName = firstName;
         this.lastName = lastName;
     }
 }
